@@ -7,8 +7,8 @@ const ListSwitch = (props) => {
   
   return (
     <div className="toggle-wrapper">
+      <h2 className="show-label">Show the best of</h2>
       <ToggleButtonGroup type="radio" name="time" defaultValue={false} onChange={props.switchTime}>
-        <div className="show-label">Show the best of </div>
         <ToggleButton value={false}>
           Last 30 days
         </ToggleButton>

@@ -1,27 +1,85 @@
-.App {
-  text-align: center;
-}
+body {
+  font-family: 'Lato', sans-serif; }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: darkgreen;
+  text-align: center;
   padding: 20px;
-  color: white;
-}
+  color: white; }
+  .App-header h1 {
+    font-size: 2.7em;
+    font-family: 'Glegoo', serif; }
+    .App-header h1 i {
+      margin-left: 0.5em; }
+  .App-header h2 {
+    font-size: 1.5em; }
+  .App-header .btn-default {
+    background: transparent;
+    border: 2px white solid;
+    text-shadow: none;
+    color: white;
+    box-shadow: none; }
+    .App-header .btn-default:hover {
+      border-color: white;
+      background-color: #eee;
+      color: darkgreen; }
+    .App-header .btn-default:active, .App-header .btn-default.active {
+      background-color: white;
+      color: darkgreen; }
 
 .App-intro {
-  font-size: large;
-}
+  font-size: large; }
 
 .avatar {
-  width: 35px;
-  height: 35px;
-}
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
 
-thead th {
-  text-align: center;
-}
+.members-list {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 2em; }
+  .members-list button {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    width: 100%;
+    text-align: center; }
+  .members-list .table {
+    border: none; }
+    .members-list .table thead th {
+      font-size: 1.5em;
+      border: none;
+      border-bottom: 2px #eeeeee;
+      padding: 0.5em 0; }
+      .members-list .table thead th.rank {
+        text-align: center; }
+      .members-list .table thead th.name {
+        padding-left: 0.3em; }
+      .members-list .table thead th.active {
+        color: darkgreen; }
+    .members-list .table td {
+      vertical-align: middle;
+      border-left: none;
+      border-right: none; }
+      .members-list .table td a {
+        color: darkgreen; }
+      .members-list .table td.rank {
+        text-align: right;
+        width: 4em;
+        padding-right: 1em;
+        font-weight: bold; }
+      .members-list .table td.count {
+        text-align: center; }
+      .members-list .table td.name {
+        text-align: left; }
+        .members-list .table td.name img {
+          margin-right: 0.5em; }
 
-td.name {
-  text-align: left;
-}
+.table-striped > tbody > tr:nth-of-type(odd) td.selected {
+  font-weight: bold;
+  color: darkgreen; }
+
+.table-striped > tbody > tr:nth-of-type(even) td.selected {
+  font-weight: bold;
+  color: darkgreen; }

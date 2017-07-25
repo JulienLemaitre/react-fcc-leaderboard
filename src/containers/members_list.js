@@ -34,10 +34,10 @@ class MembersList extends Component {
       <div className="members-list">
         <Table striped bordered condensed hover>
           <thead>
-            <th>#</th>
-            <th>Camper name</th>
-            <SortableTh label="Points in the last 30 days" sortAction={this.sortByMonth} />
-            <SortableTh label="All time points" sortAction={this.sortByAllTime} />
+            <th className="rank">#</th>
+            <th className="name">Camper name</th>
+            <SortableTh label="Last 30 days points" sortAction={this.sortByMonth} active={this.state.orderBy === 'month'} />
+            <SortableTh label="All time points" sortAction={this.sortByAllTime} active={this.state.orderBy === 'allTime'} />
           </thead>
           <LeadersList
             listAllTime={this.props.listAllTime}

@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Free Code Camp Leaderboard</h2>
+          <h1>Free Code Camp Leaderboard<i className="fa fa-free-code-camp" aria-hidden="true"></i></h1>
           <ListSwitch switchTime={this.switchTime.bind(this)} />
         </div>
         <MembersList listAllTime={this.state.listAllTime} />

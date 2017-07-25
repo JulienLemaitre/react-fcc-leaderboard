@@ -45,7 +45,7 @@ class LeadersList extends Component {
 
     const leaders = this.state.list.map((user, index) => {
       return (
-        <LeaderItem key={user.username} user={user} index={index}/>
+        <LeaderItem key={user.username} user={user} index={index} order={this.props.orderBy}/>
       )
     });
 
